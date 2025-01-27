@@ -1,8 +1,23 @@
 ﻿
 using _02_Poo.MedioTransporte;
+using _02_Poo.SolucionAlejo.Fabrica.Avion;
+using _02_Poo.SolucionAlejo.Transversales;
+using _02_Poo.SolucionAlejo.Utils;
 using _02_Poo.TipoMedioTranspote;
 
-Init();
+//Init();
+
+Init2();
+
+static void Init2()
+{
+    FuncionesTransversales funcionesTransversales = new();
+    Rangos rangos = new(funcionesTransversales);
+    FabricacionAvion fabricacionAvion = new(rangos, funcionesTransversales);
+    var result = fabricacionAvion.CrearVehiculo();
+}
+
+
 static void Init()
 {
     //Vehiculo avion = new Avion(marca :"Boing",

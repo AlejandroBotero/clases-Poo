@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _02_Poo.SolucionAlejo.Fabrica.Avion
+namespace _02_Poo.SolucionAlejo.Fabrica.Avion.DataAvion
 {
     public enum TipoMarcaAvion
     {

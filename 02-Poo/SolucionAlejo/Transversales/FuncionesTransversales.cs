@@ -12,8 +12,8 @@ namespace _02_Poo.SolucionAlejo.Utils
         public int GetIndex(int count) 
         {
             Random rnd = new Random();
-            int index = (int)Math.Floor(rnd.NextDouble() * count);
-            return index - 1;
+            int index = (int)Math.Floor(rnd.NextDouble() * (count-1));
+            return index ;
         }
 
         public double ObtenerDoubleAleatoriamente(double rangoPrecio)
@@ -28,9 +28,10 @@ namespace _02_Poo.SolucionAlejo.Utils
             return marcas[GetIndex(marcas.Count)];
         }
 
-        public TiposColores ObtenerColor(List<TiposColores> colores)
+        public TiposColores ObtenerColores(List<TiposColores> colores)
         {
-            return colores[GetIndex(colores.Count)];
+            int index = GetIndex(colores.Count);
+            return colores[index];
         }
 
         public string ObtenerModelo(List<string> modelos)

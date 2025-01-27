@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _02_Poo.SolucionAlejo.Fabrica
+namespace _02_Poo.SolucionAlejo.Fabrica.Avion
 {
     public class TipoAvion
     {
@@ -17,6 +17,6 @@ namespace _02_Poo.SolucionAlejo.Fabrica
         public string Marca { get; set; }
         public string Modelo { get; set; }
 
-        
+
     }
 }

@@ -1,15 +1,14 @@
-﻿using _02_Poo.SolucionAlejo.Fabrica.Avion;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _02_Poo.SolucionAlejo.Fabrica.DataAvion
+namespace _02_Poo.SolucionAlejo.Fabrica.Avion.DataAvion
 {
     public class DiccionarioMarcaAviones
     {
-        
+
         //ESto se hace acá para separar lógica del dominio de los datos
         //Más adelante toda esta lógica de datos se debe llevar a una base de datos SQl Server
 
