@@ -24,7 +24,7 @@ static void Init()
     Vehiculo? generateRandomVehicle()
     {
         Random rnd = new Random();  
-        int typeIndex = (int)Math.Floor(rnd.NextDouble() * 3);
+        
         int ColorIndex = (int)Math.Floor(rnd.NextDouble() * 3);
         uint RandomAnho = (uint)Math.Floor(rnd.NextDouble() * 20 ) +2000;
         int RandomLlantas = (int)Math.Floor(rnd.NextDouble() * 2) * 2 + 2;
@@ -34,7 +34,7 @@ static void Init()
         List<string> tipos = new List<string>() { "Avion", "Carro", "bicicleta" };
         List<string> colores = new List<string> { "blanco", "rojo", "negro", "azul" };
 
-        string tipoRandom = tipos[typeIndex];
+        string tipoRandom = string.Empty;//tipos[typeIndex];
         string colorRandom = colores[ColorIndex];
         if (tipoRandom == tipos[0])
         {
