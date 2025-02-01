@@ -14,12 +14,8 @@ namespace _02_Poo.MedioTransporte
 
         public override double Acelerar()
         {
-<<<<<<< HEAD
-            throw new NotImplementedException();
-=======
             Velocidad += 3;
             return Velocidad;
->>>>>>> master
         }
     }
 }

@@ -5,7 +5,16 @@ VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Poo", "..\01-Poo\01-Poo.csproj", "{32730FFD-EF3A-4EEA-BFEE-537B8EE39048}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-Poo", "02-Poo\02-Poo.csproj", "{127FF3EB-6183-4345-BA01-4802569733AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-Poo", "02-Poo\02-Poo.csproj", "{127FF3EB-6183-4345-BA01-4802569733AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{D12DDEF2-ED04-49E4-946F-3F785D6B5ACC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{F827D0FF-8FB5-4D8C-A33C-B45B2ABC8901}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase03", "Clase03\Clase03.csproj", "{2EDE2FA0-CCE4-473F-A09B-01561E88BD37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +30,10 @@ Global
 		{127FF3EB-6183-4345-BA01-4802569733AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{127FF3EB-6183-4345-BA01-4802569733AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{127FF3EB-6183-4345-BA01-4802569733AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EDE2FA0-CCE4-473F-A09B-01561E88BD37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EDE2FA0-CCE4-473F-A09B-01561E88BD37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EDE2FA0-CCE4-473F-A09B-01561E88BD37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EDE2FA0-CCE4-473F-A09B-01561E88BD37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
