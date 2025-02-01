@@ -10,6 +10,7 @@ namespace _02_Poo.SolucionAlejo.Enums
     {
         Carro = 0,
         Avion = 1,
-        Bicicleta = 2
+        Bicicleta = 2,
+        Moto = 3,
     }
 }

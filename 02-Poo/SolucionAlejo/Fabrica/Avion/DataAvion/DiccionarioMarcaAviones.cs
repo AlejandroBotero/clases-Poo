@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _02_Poo.SolucionAlejo.Fabrica.Contrato;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _02_Poo.SolucionAlejo.Fabrica.Avion.DataAvion
 {
-    public class DiccionarioMarcaAviones
+    public class DiccionarioMarcaAviones : IDiccionarioMarca
     {
 
         //ESto se hace acá para separar lógica del dominio de los datos

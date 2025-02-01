@@ -11,6 +11,7 @@ namespace _02_Poo.SolucionAlejo.Enums
         Amarillo = 0,
         Azul = 1,
         Rojo = 2,
-        Blanco = 3
+        Blanco = 3,
+        Negro = 4,
     }
 }
