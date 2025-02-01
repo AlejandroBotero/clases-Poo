@@ -11,30 +11,38 @@ namespace _02_Poo.SolucionAlejoB
 {
     public class VehiculoRandom
     {
-        public Vehiculo Generate()
+        public Vehiculo Generate(string Tipo="", string Marca="", string Modelo = "", int Llantas = 0)
         {
             Random random = new Random();
             TiposVehiculos tiposVehiculos = new();
 
             var tipos = tiposVehiculos.TiposVehiculosDict;
 
-            int randomTipoIndex = random.Next(tipos.Keys.Count);
-            List<string> tiposString = new List<string>(tipos.Keys);
 
-            string Tipo = tiposString[randomTipoIndex]; // first parameter
+            if (Tipo == "")
+            {
+                int randomTipoIndex = random.Next(tipos.Keys.Count);
+                List<string> tiposString = new List<string>(tipos.Keys);
+                Tipo = tiposString[randomTipoIndex]; // first parameter
+            }
+
 
             var TipoDict = tipos[Tipo];
 
+
+            if (Marca == "")
+            {
             int randomMarcaIndex = random.Next(TipoDict.Keys.Count);
             List<string> marcasString = new List<string>(TipoDict.Keys);
+            Marca = marcasString[randomMarcaIndex]; // second parameter
+            }
 
-            string Marca = marcasString[randomMarcaIndex]; // second parameter
-
-            var modelosList = TipoDict[Marca];
-
-            int randomModeloIndex = random.Next(modelosList.Count);
-
-            string Modelo = modelosList[randomModeloIndex]; // third parameter
+            if (Modelo == "")
+            {
+                var modelosList = TipoDict[Marca];
+                int randomModeloIndex = random.Next(modelosList.Count);
+                Modelo = modelosList[randomModeloIndex]; // third parameter
+            }
 
 
             List<string> Colores = new List<string>() {
@@ -48,8 +56,9 @@ namespace _02_Poo.SolucionAlejoB
             string Color = Colores[random.Next(Colores.Count)];
 
             uint Anho = (uint) random.Next(50)+1975;
-
-            int Llantas = (random.Next(2)+1)*2;
+            if (Llantas == 0) { 
+                Llantas = (random.Next(2)+1)*2;
+            }
 
             int Precio = (random.Next(10) + 1) * 1000;
 
@@ -67,6 +76,8 @@ namespace _02_Poo.SolucionAlejoB
             }
             else
             {
+                Llantas = (random.Next(3) + 1);
+
                 return new Bicicleta(Marca, Color, Modelo, Anho, Llantas, Precio);
             }
 

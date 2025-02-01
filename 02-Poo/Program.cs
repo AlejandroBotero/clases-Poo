@@ -9,7 +9,7 @@ static void Init()
     VehiculoRandom vehiculoRandom = new();
     for (int i = 0; i < 10; i++)
     {
-    Vehiculo Car = vehiculoRandom.Generate();
+    Vehiculo Car = vehiculoRandom.Generate(Tipo:"Avion", Llantas:20);
     Console.WriteLine(Car.ToString());
     }
 }
